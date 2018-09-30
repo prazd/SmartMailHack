@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     container: {
      flex: 1,
      alignItems: "center",
+     backgroundColor:'white'
     },
     buttonUpperContainer: {
       marginTop: 40,
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
       justifyContent:'center',
       width: 200,
       height: 200,
-      backgroundColor:'rgba(23, 235, 55, 1);',
+      backgroundColor:'#10FD8C',
       borderRadius: 100,
     },
     buttonLowerContainer: {
@@ -50,7 +51,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         width: 200,
         height: 200,
-        backgroundColor:'rgba(235, 23, 23, 1);',
+        backgroundColor:'#1FA1B7',
         borderRadius: 100,
       },
   });

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import axios from "axios";
 import {
-    ScrollView,
     Text,
     TextInput,
     View,
-    Button
+    TouchableOpacity,
+    StyleSheet
 } from 'react-native';
 
 export default class Login extends Component {
@@ -17,16 +17,42 @@ export default class Login extends Component {
           .then((result) => this._moveToPersonView())}
     render() {
         return (
-            <ScrollView style={{padding: 20}}>
+            <View>
                 <Text 
-                    style={{fontSize: 27}}>
-                    Вход
+                   style={styles.head}>
+                    Войдите, чтобы начать помогать детям
                 </Text>
                 <TextInput placeholder='Логин' />
                 <TextInput placeholder='Пароль' />
-                <View style={{margin:7}} />
-                <Button onPress={onPress=this.Submit.bind(this)} title="Войти"/>
-                  </ScrollView>
+                <View style={styles.view}>
+                <TouchableOpacity style={styles.but}><Text style={styles.txt}>
+                    Войти
+                </Text>
+                </TouchableOpacity>
+                </View>
+                  </View>
             )
     }
 }
+
+const styles = StyleSheet.create({
+    head:{
+    fontSize: 21,
+    fontFamily: 'Roboto',
+    fontWeight: 'normal',
+    textAlign: "center",
+    },
+    but:{
+        alignItems: 'center',
+        backgroundColor: '#10FD8C',
+        padding: 10,
+        borderRadius:6,
+        height:50,
+        width:270,
+    },
+    view:{
+        flex: 1,
+        alignItems: "center",
+        backgroundColor:'white'
+    }
+})
