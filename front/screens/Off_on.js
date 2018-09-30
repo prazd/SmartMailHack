@@ -6,7 +6,7 @@ export class Off_on extends Component {
     return (
         <View style={styles.container}>
         <TouchableOpacity style={styles.buttonUpperContainer}>
-        <Text style={styles.customBtnText}>Онлайн</Text>
+        <Text style={styles.customBtnText} onPress={() => this.props.navigation.navigate('StartChatScreen')}>Онлайн</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.buttonLowerContainer} onPress={() => this.props.navigation.navigate('PodcastsScreen')}>
         <Text style={styles.customBtnText} >Оффлайн</Text>

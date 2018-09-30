@@ -47,7 +47,7 @@ export default class Poscasts extends Component {
 const styles = StyleSheet.create({
     head:{
     fontSize: 21,
-    fontFamily: 'Roboto',
+    fontFamily: 'Courier',
     fontWeight: 'normal',
     textAlign: "center",
     },

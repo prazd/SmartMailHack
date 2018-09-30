@@ -13,6 +13,7 @@ import Podcasts from './screens/Podcasts';
 import Suicide from './screens/Suicide';
 import Blackmail from './screens/Blackmail';
 import Depression from './screens/Depression';
+import StartChat from './screens/StartChat'
 
 const AppNavigator = StackNavigator({
   SettingScreen:{screen:Main},
@@ -21,7 +22,8 @@ const AppNavigator = StackNavigator({
   PodcastsScreen:{screen:Podcasts},
   SuicideScreen:{screen:Suicide},
   BlackScreen:{screen:Blackmail},
-  DepressionScreen:{screen:Depression}
+  DepressionScreen:{screen:Depression},
+  StartChatScreen:{screen:StartChat}
 });
 
 
