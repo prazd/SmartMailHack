@@ -10,7 +10,7 @@ export default class StartChat extends Component {
     render() {
         return (
             <Router>
-            <Scene key='root' style={{paddingTop: Platform.OS === 'ios' ? 64 : 54}}>
+            <Scene key='root'hideNavBar={true} style={{paddingTop: Platform.OS === 'ios' ? 64 : 54}}>
               <Scene key='home' title='Настройка' component={Home}/>
               <Scene key='chat' title='Чат' component={Chat}/>
             </Scene>
