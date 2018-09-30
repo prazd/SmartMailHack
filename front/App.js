@@ -11,7 +11,7 @@ import Off_on from './screens/Off_on';
 import Login  from './screens/Login';
 import Podcasts from './screens/Podcasts';
 import Suicide from './screens/Suicide';
-import Alarm from './screens/Alarm';
+import Blackmail from './screens/Blackmail';
 import Depression from './screens/Depression';
 
 const AppNavigator = StackNavigator({
@@ -20,7 +20,7 @@ const AppNavigator = StackNavigator({
   LoginScreen:{screen:Login},
   PodcastsScreen:{screen:Podcasts},
   SuicideScreen:{screen:Suicide},
-  AlarmScreen:{screen:Alarm},
+  BlackScreen:{screen:Blackmail},
   DepressionScreen:{screen:Depression}
 });
 

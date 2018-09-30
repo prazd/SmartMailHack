@@ -25,7 +25,7 @@ export default class Login extends Component {
                 <TextInput placeholder='Логин' />
                 <TextInput placeholder='Пароль' />
                 <View style={styles.view}>
-                <TouchableOpacity style={styles.but}><Text style={styles.txt}>
+                <TouchableOpacity style={styles.but} onPress={()=>{}}><Text>
                     Войти
                 </Text>
                 </TouchableOpacity>

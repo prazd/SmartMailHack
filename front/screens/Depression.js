@@ -3,9 +3,6 @@ import axios from "axios";
 import {
     ScrollView,
     Text,
-    TextInput,
-    View,
-    Button
 } from 'react-native';
 
 export default class Depression extends Component {
