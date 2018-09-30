@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	mongo  = "localhost:27017"
+	mongo  = "mongodb://mongo:27017"
 	dbName = "psy"
 	dbCol  = "admins"
 )

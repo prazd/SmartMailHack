@@ -11,12 +11,6 @@ import (
 func main() {
 	r := gin.Default()
 
-	// r.LoadHTMLGlob("./vue/dist/*.html")
-	// r.Use(static.Serve("/static/css", static.LocalFile("../vue/dist/static", false)))
-	// r.GET("/", func(c *gin.Context) {
-	// 	c.HTML(http.StatusOK, "index.html", "")
-	// })
-
 	r.GET("/check", func(c *gin.Context) { // Тестовый запрос (онлайн или нет - подкасты и чаты)
 		c.JSON(200, gin.H{
 			"message": "nice",
