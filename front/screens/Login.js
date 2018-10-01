@@ -16,14 +16,14 @@ export default class Login extends Component {
     };
 
     _moveToPersonView() {
-        Alert.alert('Успешно!');
+        Alert.alert('Успешно!')
         this.props.navigation.navigate('StartChatScreen')
     }
   
     async signIn() {
         try {
           let response = await fetch(
-            'http://localhost:8080/in', {
+            'http://142.93.71.221:8080/in', {
                 method: 'POST',
                 headers: {
                   Accept: 'application/json',
@@ -39,7 +39,7 @@ export default class Login extends Component {
             this._moveToPersonView()
           }
         } catch (error) {
-          console.error(error);
+
         }
       }
 
@@ -50,18 +50,18 @@ export default class Login extends Component {
                    style={styles.head}>
                     Войдите, чтобы начать помогать детям
                 </Text>
-                <TextInput placeholder='Логин'
+                <TextInput style={styles.upper} placeholder='Логин'
                 onChangeText={(value) => 
                     this.setState({login: value})}
                   value={this.state.login} />
-                <TextInput placeholder='Пароль'
+                <TextInput style={styles.upper} placeholder='Пароль'
                 onChangeText={(value) => 
                     this.setState({password: value})}
                   value={this.state.password} />
                 <View style={styles.view}>
                 <TouchableOpacity style={styles.but} onPress={()=>{
                     this.signIn()
-                }}><Text>
+                }}><Text style={styles.texte}>
                     Войти
                 </Text>
                 </TouchableOpacity>
@@ -85,10 +85,22 @@ const styles = StyleSheet.create({
         borderRadius:6,
         height:50,
         width:270,
+        marginTop:90
     },
     view:{
         flex: 1,
         alignItems: "center",
         backgroundColor:'white'
+    },
+    texte:{
+    marginTop:3,
+    textAlign: 'center',
+    paddingBottom: 20,
+    fontSize: 18,
+    },
+    upper:{
+        width:200,
+        height:50,
+        margin:10
     }
 })
